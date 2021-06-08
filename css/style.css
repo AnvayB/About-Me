@@ -1,0 +1,17 @@
+body {
+  background-color: aqua;
+}
+
+.mePic {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.content {
+  display: inline-block;
+} 
