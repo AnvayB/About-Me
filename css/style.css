@@ -18,10 +18,8 @@ a, .content, ol {
 /* from https://www.w3schools.com/css/css_boxmodel.asp */
 div {
   background-color: rgb(191,211,233);
-  width: 400px;
-  border: 15px;
-  padding: 5px;
-  margin: 20px;
+  width: 420px;
+  margin: 10px;
 }
 
 table {
@@ -32,4 +30,9 @@ footer {
   text-align: right;
   padding-right: 5px;
   padding-bottom: 5px;
+}
+
+#indent {
+  list-style-type: circle;
+  margin-left: 20px;
 }

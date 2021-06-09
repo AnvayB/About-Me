@@ -55,6 +55,42 @@ if (answer5 === "yes" || answer5 === "y"){
   alert("I wouldn't really be in my major or even this course if I didn't like it.");
 } else {alert("Make sure to enter a Yes or No answer; I can't understand if you type in anything else.")}
 
+
+alert("Now let's play a quick Random Number Guessing Game");
+
+
+
+
+alert("Last game: See if you can try and guess one of my favorite TV shows");
+let shows = ['Avatar', 'The Office', 'Silicon Valley', 'Lucifer', 'New Girl'];
+
+let numGuess = 6;
+let correctAnswer = false;
+let incorrectAnswer = 0;
+
+while (!correctAnswer && numGuess > 0){
+  let guess = prompt("Can you guess what my favorite TV show is?");
+  for (let index = 0; index < shows.length; index++){
+    if (guess === shows[index]){
+      alert("That's right! " + guess + " is one of my favorite shows!");
+      correctAnswer = true;
+      break;
+    }
+    console.log("current show: " + guess + " vs show options: " + shows[index]);
+  }
+  if (correctAnswer === true) {
+    break;
+  }
+  alert("No, that's not it. Try again.")
+  numGuess--;
+  incorrectAnswer++;
+}
+
+let finalScore = 7 - incorrectAnswer;
+alert("Your final score is " + finalScore + " out of 7.");
+
+
+
 //console.log("Thank you for playing my game, " + userName + ". You can learn more about me after you press 'OK'.");
 alert("Thank you for playing my game, " + userName + ". You can learn more about me after you press 'OK'.");
 
