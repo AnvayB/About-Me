@@ -14,4 +14,10 @@ h1 {
 
 .content {
   display: inline-block;
+  margin-top: -10px;
 } 
+
+table {
+  text-align: center;
+}
+
