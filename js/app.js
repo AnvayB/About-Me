@@ -22,7 +22,7 @@ if (answer2 === "yes" || answer2 === "y"){
   alert("That's right, I'm currently an incoming senior at San Jose State University.");
 } else if (answer2 == "no" || answer2 === "n"){
   //console.log("People have told me that my facial hair makes me look 40, but I assure you that I'm 21. \nAnd yes, I'm currently an incoming senior at San Jose State University.");
-  alert("People have told me that my facial hair makes me look 40, but I assure you that I'm 21. \nAnd yes, I'm currently an incoming senior at San Jose State University.");
+  alert("People have told me that my facial hair makes me look 40, but I promise I'm 21. \nAnd yes, I'm currently an incoming senior at San Jose State University.");
 } else {alert("Make sure to enter a Yes or No answer; I can't understand if you type in anything else.")}
 
 let question3 = prompt("Do I have any pets?");
@@ -42,7 +42,7 @@ if (answer4 === "yes" || answer4 === "y"){
   alert("Not yet, I still live with my family in Milpitas. The only possible way that I'll move out is if I get a job in SF or somewhere out of Silicon Valley. So fingers crossed 🤞");
 } else if (answer4 == "no" || answer4 === "n"){
   //console.log("Yea, I still live with my parents and sister. The only possible way that I'll move out is if I get a job in SF or somewhere out of Silicon Valley. I'm not too keen on moving out of Silicon Valley but other than that, fingers crossed 🤞");
-  alert("Yea, I still live with my parents and sister. The only possible way that I'll move out is if I get a job in SF or somewhere out of Silicon Valley. I'm not too keen on moving out of Silicon Valley but other than that, fingers crossed 🤞");
+  alert("I still live with my parents and sister. The only possible way that I'll move out is if I get a job in SF or somewhere out of Silicon Valley. I'm not too keen on moving out of Silicon Valley but other than that, fingers crossed 🤞");
 } else {alert("Make sure to enter a Yes or No answer; I can't understand if you type in anything else.")}
 
 let question5 = prompt("Do I like coding?");
