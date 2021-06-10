@@ -61,7 +61,7 @@ if (answer5 === "yes" || answer5 === "y"){
   alert("I wouldn't really be in my major or even this course if I didn't like it.");
 } else {alert("Make sure to enter a Yes or No answer; I can't understand if you type in anything else.")}
 
-alert("current score: " + FINALCOUNT);
+console.log("current score: " + FINALCOUNT);
 
 alert("Now let's play a quick Random Number Guessing Game");
 //generate a random number from 1 to 10
@@ -123,7 +123,7 @@ while (!correctAnswer && numGuess > 0){
 
 let finalScore = FINALCOUNT;
 alert("Your final score is " + finalScore + " out of 7.");
-
+console.log(userName + "'s final score: " + finalScore);
 
 
 //console.log("Thank you for playing my game, " + userName + ". You can learn more about me after you press 'OK'.");
