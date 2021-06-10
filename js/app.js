@@ -136,6 +136,7 @@ function Q7(){
   }
 }
 
+//All functions running:
 Q1();
 Q2();
 Q3();
