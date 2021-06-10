@@ -22,6 +22,10 @@ div {
   margin: 10px;
 }
 
+img {
+  border: dotted blue;
+}
+
 table {
   text-align: center;
 }
