@@ -68,7 +68,7 @@ alert("Now let's play a quick Random Number Guessing Game");
 let randNum = Math.floor(Math.random() * 10) + 1;
 console.log(randNum);
 let chances = 4;
-let correct = false;
+let correct = false; //this variable is a flag
 
 for (let i = 0; i < chances; i++){
   let guess = prompt("Pick a number between 1 and 10 \nChances left: " + (chances-i) + ". \nGuess wisely.");
@@ -94,9 +94,9 @@ if (correct == false){
 alert("You ran out of chances. Sorry :/ \n The number was " + randNum);
 }
 
-
+//TV Show guessing game: guess my favorite TV show from an array of choices
 alert("Last game: See if you can try and guess one of my favorite TV shows \nMake sure to capitalize the first letter.");
-let shows = ['Avatar', 'The Office', 'Silicon Valley', 'Lucifer', 'New Girl'];
+let shows = ['Avatar', 'The Office', 'Silicon Valley', 'Lucifer', 'New Girl', 'Community', 'Psych', 'Parks and Rec', 'IT Crowd', 'Brooklyn Nine-Nine', 'B99'];
 
 let numGuess = 6;
 let correctAnswer = false;
