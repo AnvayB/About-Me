@@ -15,3 +15,7 @@
   - Work History
   - Future Goals
   - Top Ten TV Shows
+
+### Pair Programming
+- I was the Driver for Tim
+- I was the Navigator for Jess
