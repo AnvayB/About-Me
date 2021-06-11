@@ -1,6 +1,10 @@
 'use strict'
 
 let userName = prompt("What is your name?");
+while (userName === null || userName === ''){
+  prompt("You have to enter some name to start this:");
+}
+
 alert("Hi " + userName + ", welcome to my site!");
 alert("Let's play a guessing game so you can learn more about me. Make sure give all questions a yes or no answer.");
 let FINALCOUNT = 0;
@@ -73,13 +77,13 @@ function Q5(){
 }
 console.log("current score: " + FINALCOUNT);
 
-function Q6(){
+function randNumGG(){
   alert("Now let's play a quick Random Number Guessing Game");
 //generate a random number from 1 to 10
   let randNum = Math.floor(Math.random() * 10) + 1;
   console.log(randNum);
   let chances = 4;
-  let correct = false; //this variable is a flag
+  let correct = false; //this variable is called a "flag"
 
   for (let i = 0; i < chances; i++){
     let guess = prompt("Pick a number between 1 and 10 \nChances left: " + (chances-i) + ". \nGuess wisely.");
@@ -108,7 +112,7 @@ function Q6(){
 
 //TV Show guessing game: guess my favorite TV show from an array of choices
 
-function Q7(){
+function favShow(){
   alert("Last game: See if you can try and guess one of my favorite TV shows \nMake sure to capitalize the first letter.");
   let shows = ['Avatar', 'The Office', 'Silicon Valley', 'Lucifer', 'New Girl', 'Community', 'Psych', 'Parks and Rec', 'IT Crowd', 'Brooklyn Nine-Nine', 'B99'];
 
@@ -142,8 +146,8 @@ Q2();
 Q3();
 Q4();
 Q5();
-Q6();
-Q7();
+randNumGG();
+favShow();
 
 let finalScore = FINALCOUNT;
 alert("Your final score is " + finalScore + " out of 7.");
@@ -152,5 +156,3 @@ console.log(userName + "'s final score: " + finalScore);
 
 //console.log("Thank you for playing my game, " + userName + ". You can learn more about me after you press 'OK'.");
 alert("Thank you for playing my games, " + userName + ". You can learn more about me after you press 'OK'.");
-
-
