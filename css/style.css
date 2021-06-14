@@ -1,34 +1,81 @@
 body {
   background-color:rgb(191,211,233);
+  padding: 20px;
+  /* from https://miro.com/app/board/o9J_lAVsErc=/?moveToWidget=3074457360065271899&cot=14 */
+	overflow-x: hidden;
+	box-shadow:
+		inset #19d4ff 0 0 0 5px,
+		inset #18cdf7 0 0 0 1px,
+		inset #53dfff 0 0 0 10px,
+		inset #50d8f7 0 0 0 11px,
+		inset #8ce9ff 0 0 0 16px,
+		inset #88e2f7 0 0 0 17px,
+		inset #c5f4ff 0 0 0 22px,
+		inset #bfecf7 0 0 0 23px;
 }
 
-.mePic {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.links, h1 {
-  text-align: center;
-}
-
-a, .content, ol {
+/* from https://stackoverflow.com/questions/114543/how-to-horizontally-center-an-element */
+.content{
   margin-top: -10px;
+  display: table;
+  margin: 0 auto;
+  text-align: center;
 } 
-/* from https://www.w3schools.com/css/css_boxmodel.asp */
+p:not(#links) {
+  margin-top: -10px;
+  text-align: center;
+  width: 450px;
+}
+
+table {
+  margin-top: -20px;
+  display: table;
+  margin: 0 auto;
+
+}
+/* from https://stackoverflow.com/questions/21964111/horizontal-space-between-links-in-html-css/21964150 */
+a {
+  margin-top: -20px;
+  padding: 0px 5px;
+  word-wrap: normal;
+  display: inline-block;
+}
+
 div {
   background-color: rgb(191,211,233);
-  width: 420px;
+  width: 470px;
   margin: 10px;
+}
+
+* {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.inner {
+  float: left;
+  width: 25%;
+  padding: 0px;
+
+  
+}
+
+.outer::after{
+  content: "";
+  display: table;
+  clear: both;
 }
 
 img {
   border: dotted blue;
 }
 
-table {
-  text-align: center;
+ol, ul {
+  display: table;
+  margin: 0 auto;
+  text-align: left;
 }
+
 
 footer {
   text-align: right;
@@ -38,5 +85,6 @@ footer {
 
 #indent {
   list-style-type: circle;
-  margin-left: 20px;
+  margin-left: 50px;
 }
+

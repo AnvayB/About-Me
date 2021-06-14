@@ -2,12 +2,24 @@
 <html>
   <head>
     <title>  Lab 3: About Me – guessing game (extended)  </title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header>
-      <img src = "./img/Anvay casual.jpg" alt = "me smiling in a Dunder Mifflin hoodie" height = "400" class = "mePic">
+      <div class = "outer">
+        <div class = "inner">
+          <img src = "./img/Anvay casual.jpg" alt = "me smiling in a Dunder Mifflin hoodie" width = "100%">
+        </div>
+        <div class = "inner">
+          <img src = "./img/overcoat.JPG" width = "106%">
+        </div>
+        <div class = "inner">
+          <img src = "./img/rose hoodie.jpg" width = "100%">
+        </div>
+      </div>
+      </header>
+      
       <h1>
         Anvay Bhanap
       </h1>
@@ -17,7 +29,7 @@
       <a href = "#work">•Work Experience </a>
       <a href = "#goals">•Future Goals </a>
       <a href="#topten">•Top Ten</a>
-    </header>
+
 
     <header><h2 id = "bio">Biography</h2></header>
     <div class = "content">
@@ -31,18 +43,6 @@
         <th>Years</th>
         <th>Extracurricular</th>
       </tr>
-      <!-- <tr>
-        <td>Stratford Elementary</td>
-        <td>K – 5</td>
-      </tr>
-      <tr>
-        <td>Curtner Elementary</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>Magnolia Science Academy</td>
-        <td>7 – 8</td>
-      </tr> -->
       <tr>
         <td>Milpitas High School</td>
         <td>2014 - 2018</td>
@@ -80,7 +80,7 @@
           
         <li>Its algorithm has a matching service where:</li> 
         
-          <li id = "indent">Users enter their skills and preferences onto their profile and select which industries or companies they're interested in</li> 
+          <li id = "indent">Users enter their skills and preferences onto their profile and select which industries or companies they like</li> 
           <li id = "indent">Companies associated with RM would specify what qualities they are looking for in potential interns</li>
           <li id = "indent">So if both parties' interests overlapped, a match was made</li>
           
@@ -89,12 +89,24 @@
           <li id = "indent">But it helped improve my confidence and communication skills when reaching out to students about the program.</li>
           
       </ul>
-      
     </div>
     <hr />
+
     <h2 id = "goals">Future Goals</h2>
+    <div class = "content">
+    <ul>
+      <li>Graduate in Spring 2022 or Fall 2022</li>
+      <li id = "indent">If I plan to graduate in Fall 2022,<br> get a software internship for Summer 2022</li>
+      <li>If I don't get a job after graduation, <br> do a coding bootcamp with Coding Dojo</li>
+      <li>Get a job in Frontend or Web Dev</li>
+      <li id = "indent">preferably in SF/Silicon Valley</li>
+      <li>Get a Tesla and a nice apartment</li>
+      <li>Enjoy life</li>
+    </ul>
+    </div>
     
-    <script src = "js/app.js"></script>
+    
+    <!-- <script src = "js/app.js"></script> -->
 
     <hr />
     <h3 id = "topten">Top 10 TV Shows</h3>
@@ -111,6 +123,6 @@
       <li>Brooklyn Nine-Nine</li>
     </ol>
 
-    <footer> © AnvayB</footer>
+    <footer>© AnvayB</footer>
   </body>
 </html> 
